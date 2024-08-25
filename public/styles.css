@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1{
+    margin: 1rem;
+    text-align: center;
+}
+
+.errContainer{
+    display: grid;
+    place-items: center;
+    padding-top: 4em;
+}
+.errContainer h1{
+    color: red;
+    font-size: 4rem;
+}
+.errContainer p{
+    font-size: 1.1rem;
+}
+.errContainer p .slug{
+    font-weight: 700;
+}
