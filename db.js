@@ -9,6 +9,11 @@ const schema = new mongoose.Schema({
     url: {
         type: String,
         required: true
+    },
+    new_url:{
+        type: String,
+        required: true,
+        unique: true
     }
 });
 
