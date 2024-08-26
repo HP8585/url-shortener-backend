@@ -65,7 +65,7 @@ app.post('/url', async (req, res, next)=>{
         }else{
             const existing = await UrlDb.findOne({ slug })
             if(existing){
-                throw new Error('Slug already in use. 🍕')
+                return res.status(400).json({ message: 'Slug already in use. 🍕' });
             }
         }
         slug = slug.toLowerCase();
