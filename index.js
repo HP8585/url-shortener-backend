@@ -73,7 +73,7 @@ app.post('/url', async (req, res, next)=>{
         const newUrl = new UrlDb({
             url,
             slug,
-            clicks: 0
+            new_url: `https://hp-us.vercel.app/${slug}`
         })
 
         const created = await newUrl.save()
